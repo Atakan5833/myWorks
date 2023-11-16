@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    min-height: 60px;
+}
+.logo {
+    margin: 0 2rem ;
+}
+a {
+    text-decoration: none;
+    color: brown;
+    margin-right: 8px;
+}
+.menu {
+    list-style-type: none;
+    display: flex;
+    transition: 1s;
+}
+ul.active {
+    left: 0%;
+}
+button {
+    margin-left: auto;
+    padding: 4px;
+    margin-right: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+/* RESPONSİVE START */
+@media all and (max-width:768px) {
+
+    button {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        top: 10%;
+        left: -100%;
+        flex-direction: column;
+        padding: 5px;
+        background-color: black;
+    }
+    .menu li {
+        margin-bottom: 5px;
+    }
+}
