@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    gap: 1.5rem;
+}
+
+.image {
+    border-radius: 60px;
+    flex: 0.5;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    cursor: pointer;
+    transition: 1s linear ;
+}
+.image.active{
+    flex:5;
+}
+
+.image.active h3 {
+    opacity: 1;
+}
+
+.image h3 {
+    position: absolute;
+    font-size: 2rem;
+    bottom: 20px;
+    left: 30px;
+    color: #fff;
+    opacity: 0;
+}
+
+
+/* RESPONSİVE */
+/* @media all and (max-width:768px) {
+    
+    .image:nth-child(4),
+    .image:nth-child(5),
+    .image:nth-child(6) {
+        display: none;
+    }
+
+
+} */
