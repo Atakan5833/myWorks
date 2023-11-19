@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    max-width: 80%;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 1rem;
+
+}
+
+.user {
+    border: 1px solid gray;
+    max-width: 200px;
+    overflow: auto;
+    border-radius: 10px;
+}
+
+.user h3, .image-container p:nth-of-type(1) {
+    text-align: center;
+}
+
+
+#loader.active{
+    display: none;
+    transition: all 1s ease-in;
+}
+#more.active {
+    display: none;
+}
+button {
+    cursor: pointer;
+    padding: 4px 8px;
+}
